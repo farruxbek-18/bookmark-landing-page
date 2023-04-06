@@ -1,3 +1,10 @@
+:root{
+  --body-bg:#F2F2F2;
+  --button-color-orang:#FA5959;
+  --text-color:#242A45;
+  --button-blu:#5267DF;
+  --button-bg:#F7F7F7;
+}
 /* GLOBAL */
 html{
   height: 100%;
@@ -16,10 +23,10 @@ body{
   height: 100%;
   padding: 0px;
   margin: 0px;
-  font-family: "Arial",sans-serif;
+  font-family:'Rubik', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color:var(--body-bg);
   color: #222;
 }
 img{
@@ -30,11 +37,52 @@ img{
 .container{
   width: 100%;
   max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 48px;
+  padding-right: 48px;
   margin: auto;
 }
 /* MAI-CONTANENT */
 .main-content{
   flex-grow: 1;
+}
+
+/* HEADER */
+.sait-header {
+}
+.sait-header__container {
+  width: 100%;
+  padding-top:48px;
+}
+.sait-header-navbar{
+  display: flex;
+}
+.sait-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 149px;
+  height: 25px;
+}
+.sait__nav {
+  margin-left: auto;
+}
+.sait__list {
+  display: flex;
+  list-style: none;
+}
+.sait__item {
+}
+.sait__item:not(:last-child){
+  margin-right: 45px;
+}
+.button {
+  padding: 12px 32px;
+  border: none;
+  background:var(--button-color-orang);
+  color: #fff;
+}
+.saitnav-button {
+  margin-left: 48px;
 }
